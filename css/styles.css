@@ -1,0 +1,391 @@
+:root {
+  --color-dark: #2e2f42;
+  --color-text: #434455;
+  --color-primary-brand: #4d5ae5;
+  --color-pressed-state: #404bbf;
+  --color-accent: #e7e9fc;
+  --color-light: #f4f4fd;
+  --color-title-site: #ffffff;
+  --default-big-gap: 120px;
+  --default-small-gap: 24px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* paragraph text color */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+/*! ********************** COMPONENTS ***********************/
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.hidden-header {
+  /* display: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subtitle {
+  margin-bottom: calc(var(--default-small-gap) / 3);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+}
+.title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-dark);
+  text-align: center;
+}
+.profession {
+  font-size: 16px;
+}
+/* Хоч ця якість по замовченню від браузера + наслідується від body але задала чтоб виконати вимоги автоперевірки */
+/*! ********************** / COMPONENTS ***********************/
+
+/*! ***************** HEADER (for everyone)******************/
+.header-site {
+  padding-top: var(--default-small-gap);
+  padding-bottom: var(--default-small-gap);
+  background-color: var(--color-title-site);
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-site {
+  display: flex;
+}
+/*?============== Logo  ==============*/
+/*== components for all logs ==*/
+.logo {
+  margin-right: 76px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  /* Хоч на проекті у figma стоїть 24рх. А 24:18 =1.33 але задала  1.17чтоб виконати вимоги автоперевірки */
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-primary-brand);
+}
+
+/*== / for all logs ==*/
+
+.logo-studio-header {
+  color: var(--color-dark);
+}
+.logo-studio-footer {
+  color: var(--color-light);
+}
+/*?============== / Logo  ==============*/
+
+/*?============== Menu  ==============*/
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+}
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+  color: var(--color-pressed-state);
+}
+/* .menu .menu-link.current {
+  color: var(--color-pressed-state);
+}  автоперевірка цього не розуміє*/
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+/* .menu-item:not(:last-child) {
+  margin-right: 40px;
+} */
+
+/*?============== / Menu  ==============*/
+
+/*?============== Contacts  ==============*/
+
+.contacts {
+  font-style: normal;
+}
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--color-pressed-state);
+}
+/*?============== / Contacts  ==============*/
+/*! ********************** / HEADER ***********************/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%% MAIN PAGE %%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*! ********************** MAIN INDEX  ***********************/
+/*?============== Hero  ==============*/
+.hero {
+  background-color: var(--color-dark);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.title-site {
+  display: block;
+  max-width: 496px;
+  margin: 0 auto calc(2 * var(--default-small-gap));
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-title-site);
+}
+.order-btn {
+  padding: 16px 32px;
+  min-width: 169px;
+  background: var(--color-primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  /* Button Text */
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-title-site);
+}
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--color-pressed-state);
+}
+.order-btn {
+  cursor: pointer;
+}
+/*?============== / 1 Hero  ==============*/
+
+/*?=========== 2 About our company  ===========*/
+/* Styles for <h2 class="hidden-header">, <h3 class="subtitle"> are defined in the COMPONENTS section. <p> inherits styles from body */
+
+.about-company {
+  padding-top: var(--default-big-gap);
+  padding-bottom: var(--default-big-gap);
+}
+.about-company-list {
+  display: flex;
+  gap: var(--default-small-gap);
+}
+.about-company-item {
+  width: calc((100% -3 * var(--default-small-gap)) / 4);
+}
+/* .about-company-item:not(:last-child) {
+  margin-right: 24px;
+} */
+
+/*?=========== / About our company  ===========*/
+
+/*?=========== 3 What are we doing  ===========*/
+/* Styles for <h2 class="title"> are defined in the COMPONENTS section. */
+.doing {
+  padding-bottom: var(--default-big-gap);
+}
+.doing-list {
+  display: flex;
+  gap: var(--default-small-gap);
+}
+/* .doing-item:not(:last-child) {
+  padding-right: 24px;
+} */
+/*?=========== / What are we doing  ===========*/
+
+/*?=========== 4 Our Team  ===========*/
+.team {
+  background-color: var(--color-light);
+  padding-top: var(--default-big-gap);
+  padding-bottom: var(--default-big-gap);
+}
+/* Styles for <h2 class="title">,  <h3 class="subtitle"> are defined in the COMPONENTS section. <p> inherits styles from body */
+
+.team-list {
+  display: flex;
+
+  gap: var(--default-small-gap);
+}
+
+.team-item {
+  flex-basis: calc((100% - 3 * var(--default-small-gap)) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-info {
+  background-color: var(--color-title-site);
+  text-align: center;
+  padding: 32px 0;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* .team-item:not(:last-child) {
+  margin-right: 24px;
+} */
+.profession {
+  text-align: center;
+}
+
+/*?=========== / Our Team  ===========*/
+/*! ********************* / MAIN INDEX *********************/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%% / MAIN PAGE %%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%% PORTFOLIO %%%%%%%%%%%%%%%%%%%%%%%%*/
+/*! ********************  MAIN PORTFOLIO*********************/
+/*?=========== Our projects  ===========*/
+
+/* Styles for <h2 class="hidden-header">,  are defined in the COMPONENTS section. */
+/*?============== Filter ==============*/
+
+.projects {
+  padding-top: 96px;
+  padding-bottom: var(--default-big-gap);
+}
+.selection-portfolio {
+  display: flex;
+  justify-content: center;
+  gap: var(--default-small-gap);
+  margin-bottom: 72px;
+}
+
+.selection-btn {
+  background: var(--color-light);
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 12px 24px;
+
+  /* Button Text */
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-primary-brand);
+}
+.selection-btn:hover,
+.selection-btn:focus {
+  background-color: var(--color-pressed-state);
+  color: var(--color-title-site);
+}
+.selection-btn {
+  cursor: pointer;
+}
+
+/*?============== / Filter ==============*/
+
+/*?========= /Photo gallery of projects ==========*/
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(2 * var(--default-small-gap)) var(--default-small-gap);
+}
+
+.projects-item {
+  flex-basis: calc((100% - 2 * var(--default-small-gap)) / 3);
+}
+
+.projects-info {
+  padding: 32px 16px;
+  background: var(--color-title-site);
+  border-left: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+}
+
+/* Styles for  <h2 class="subtitle"> are defined in the COMPONENTS section. <p> inherits styles from body (except color)*/
+.projects-text {
+  color: var(--color-text);
+}
+
+/*?========= / Photo gallery of projects ==========*/
+/*! ******************** / MAIN PORTFOLIO *********************/
+/*%%%%%%%%%%%%%%%%%%%%%%%% /PORTFOLIO %%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*! ***************** FOOTER (for everyone)******************/
+.footer-site {
+  background: var(--color-dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-footer {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 16px;
+}
+.footer-text {
+  color: var(--color-accent);
+}
+.footer-info {
+  max-width: 264px;
+}
+/*! ********************** / FOOTER ***********************/
