@@ -194,7 +194,10 @@ img {
 
   background-position: center;
   background-size: cover;
+background-repeat: no-repeat;
+
   max-width: 1440px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -264,11 +267,13 @@ img {
 } */
 .about-company-icon {
   display: flex;
-  width: 264px;
+
+  /* width: 264px; */
+
   height: 112px;
   padding: 0;
   margin-bottom: 8px;
-  background: #f4f4fd;
+  background: var(--color-light);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -334,13 +339,11 @@ img {
 }
 
 /* <!-- contacts in social networks --> */
-.social-icon {
-  margin: 0;
-  padding: 0;
-}
 
 .social-icon-list {
   display: flex;
+  margin: 0;
+  padding: 0;
 
   justify-content: center;
   gap: var(--default-small-gap);
@@ -394,6 +397,15 @@ img {
 }
 
 .customers-item {
+  align-items: center;
+  width: calc((100% - 5 * var(--default-small-gap)) / 6);
+}
+
+.customers-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 88px;
   border: 1px solid var(--color-grey-icon);
   border-radius: 4px;
   display: flex;
@@ -401,15 +413,9 @@ img {
   align-items: center;
 }
 
-.customers-link {
-  margin: 0;
-  padding: 0;
-}
-
 .customers-img {
-  /* width: calc((100% -5 * var(--default-small-gap)) / 6); */
-  width: 168px;
-  height: 88px;
+  width: 104px;
+  height: 56px;
   fill: var(--color-grey-icon);
 }
 
@@ -419,9 +425,9 @@ img {
   fill: var(--color-pressed-state);
 }
 
-.customers-item:hover,
-.customers-item:focus,
-.customers-item:active {
+.customers-link:hover,
+.customers-link:focus,
+.customers-link:active {
   border: 1px solid var(--color-pressed-state);
 }
 
@@ -468,6 +474,7 @@ img {
   background-color: var(--color-pressed-state);
   color: var(--color-title-site);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-pressed-state);
 }
 
 .selection-btn {
@@ -488,7 +495,11 @@ img {
   flex-basis: calc((100% - 2 * var(--default-small-gap)) / 3);
 }
 
-.projects-item:hover {
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -503,6 +514,7 @@ img {
 /* Styles for  <h2 class="subtitle"> are defined in the COMPONENTS section. <p> inherits styles from body (except color)*/
 .projects-text {
   color: var(--color-text);
+  margin-bottom: 0;
 }
 
 /*?========= / Photo gallery of projects ==========*/
