@@ -85,6 +85,7 @@ img {
 .profession {
   font-size: 16px;
 }
+
 /* Хоч ця якість по замовченню від браузера + наслідується від body але задала чтоб виконати вимоги автоперевірки */
 /*! ********************** / COMPONENTS ***********************/
 
@@ -105,6 +106,7 @@ img {
 .nav-site {
   display: flex;
 }
+
 /*?============== Logo  ==============*/
 /*== components for all logs ==*/
 .logo {
@@ -124,9 +126,11 @@ img {
 .logo-studio-header {
   color: var(--color-dark);
 }
+
 .logo-studio-footer {
   color: var(--color-light);
 }
+
 /*?============== / Logo  ==============*/
 
 /*?============== Menu  ==============*/
@@ -137,19 +141,18 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-dark);
 }
+
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active {
   color: var(--color-pressed-state);
 }
-/* .menu .menu-link.current {
-  color: var(--color-pressed-state);
-}  автоперевірка цього не розуміє*/
 
 .menu {
   display: flex;
   gap: 40px;
 }
+
 /* .menu-item:not(:last-child) {
   margin-right: 40px;
 } */
@@ -161,6 +164,7 @@ img {
 .contacts {
   font-style: normal;
 }
+
 .contacts-list {
   display: flex;
   gap: 40px;
@@ -176,6 +180,7 @@ img {
 .contacts-link:focus {
   color: var(--color-pressed-state);
 }
+
 /*?============== / Contacts  ==============*/
 /*! ********************** / HEADER ***********************/
 
@@ -186,7 +191,7 @@ img {
 .hero {
   background-color: var(--color-dark);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/decor/hero.jpg);
-  background-repeat: no-repeat;
+
   background-position: center;
   background-size: cover;
   max-width: 1440px;
@@ -207,6 +212,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-title-site);
 }
+
 .order-btn {
   padding: 16px 32px;
   min-width: 169px;
@@ -224,13 +230,16 @@ img {
   letter-spacing: 0.04em;
   color: var(--color-title-site);
 }
+
 .order-btn:hover,
 .order-btn:focus {
   background-color: var(--color-pressed-state);
 }
+
 .order-btn {
   cursor: pointer;
 }
+
 /*?============== / 1 Hero  ==============*/
 
 /*?=========== 2 About our company  ===========*/
@@ -240,10 +249,12 @@ img {
   padding-top: var(--default-big-gap);
   padding-bottom: var(--default-big-gap);
 }
+
 .about-company-list {
   display: flex;
   gap: var(--default-small-gap);
 }
+
 .about-company-item {
   width: calc((100% -3 * var(--default-small-gap)) / 4);
 }
@@ -262,6 +273,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .company-icon {
   width: 64px;
   height: 64px;
@@ -274,10 +286,12 @@ img {
 .doing {
   padding-bottom: var(--default-big-gap);
 }
+
 .doing-list {
   display: flex;
   gap: var(--default-small-gap);
 }
+
 /* .doing-item:not(:last-child) {
   padding-right: 24px;
 } */
@@ -289,6 +303,7 @@ img {
   padding-top: var(--default-big-gap);
   padding-bottom: var(--default-big-gap);
 }
+
 /* Styles for <h2 class="title">,  <h3 class="subtitle"> are defined in the COMPONENTS section. <p> inherits styles from body */
 
 .team-list {
@@ -323,6 +338,7 @@ img {
   margin: 0;
   padding: 0;
 }
+
 .social-icon-list {
   display: flex;
   justify-content: space-between;
@@ -344,14 +360,17 @@ img {
   border-radius: 50% 50%;
   background: var(--color-primary-brand);
 }
+
 .social-icon-img {
   width: 16px;
   height: 16px;
   fill: var(--color-title-site);
 }
+
 .social-icon-item:hover {
   background: var(--color-pressed-state);
 }
+
 /* <!-- /contacts in social networks --> */
 /*?=========== / Our Team  ===========*/
 
@@ -363,6 +382,7 @@ img {
   padding-left: auto;
   padding-right: auto;
 }
+
 .customers-list {
   display: flex;
   gap: var(--default-small-gap);
@@ -377,21 +397,25 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .customers-link {
   margin: 0;
   padding: 0;
 }
+
 .customers-img {
   /* width: calc((100% -5 * var(--default-small-gap)) / 6); */
   width: 168px;
   height: 88px;
   fill: var(--color-grey-icon);
 }
+
 .customers-img:hover,
 .customers-img:focus,
 .customers-img:active {
   fill: var(--color-pressed-state);
 }
+
 .customers-item:hover,
 .customers-item:focus,
 .customers-item:active {
@@ -413,6 +437,7 @@ img {
   padding-top: 96px;
   padding-bottom: var(--default-big-gap);
 }
+
 .selection-portfolio {
   display: flex;
   justify-content: center;
@@ -434,12 +459,14 @@ img {
   letter-spacing: 0.04em;
   color: var(--color-primary-brand);
 }
+
 .selection-btn:hover,
 .selection-btn:focus {
   background-color: var(--color-pressed-state);
   color: var(--color-title-site);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .selection-btn {
   cursor: pointer;
 }
@@ -457,9 +484,11 @@ img {
 .projects-item {
   flex-basis: calc((100% - 2 * var(--default-small-gap)) / 3);
 }
+
 .projects-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .projects-info {
   padding: 32px 16px;
   background: var(--color-title-site);
@@ -483,6 +512,7 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .footer-cotainer {
   display: flex;
   align-items: flex-start;
@@ -493,9 +523,11 @@ img {
   margin-right: 0;
   margin-bottom: 16px;
 }
+
 .footer-text {
   color: var(--color-accent);
 }
+
 .footer-info {
   max-width: 264px;
   margin-right: var(--default-big-gap);
@@ -505,6 +537,7 @@ img {
   width: 208px;
   height: 80px;
 }
+
 .footer-social-title {
   margin-top: 0;
   margin-bottom: 16px;
@@ -516,6 +549,7 @@ img {
 
   color: var(--color-title-site);
 }
+
 .footer-social-icon .social-icon-item {
   background-color: rgba(255, 255, 255, 0.1);
 }
